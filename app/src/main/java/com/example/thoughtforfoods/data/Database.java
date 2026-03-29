@@ -1,9 +1,7 @@
 package com.example.thoughtforfoods.data;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 // Mocking of a database containing all the ingredients and recipes
 public class Database {
