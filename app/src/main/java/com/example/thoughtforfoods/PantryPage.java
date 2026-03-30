@@ -1,6 +1,5 @@
 package com.example.thoughtforfoods;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -10,38 +9,27 @@ import androidx.cardview.widget.CardView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-/**
- * MainActivity handles the logic for the primary screen.
- * It must extend AppCompatActivity to support older Android versions.
- */
-public class MainActivity extends AppCompatActivity {
+public class PantryPage extends AppCompatActivity {
 
     BottomNavigationView bottomNav;
-    CardView recipe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Links this Java class to the XML layout (activity_main.xml)
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_pantry);
 
         bottomNav = findViewById(R.id.bottom_nav);
-
-        recipe = findViewById(R.id.sample_recpie);
 
         bottomNav.setOnItemSelectedListener(item ->
                 handleBottomNavSelection(item.getItemId())
         );
 
-        recipe.setOnClickListener(v -> {
-            startActivity(new Intent(this, RecipePage.class));
-        });
-
-
-
 
     }
+
+
 
     private boolean handleBottomNavSelection(int id) {
         if (id == R.id.find_recipe) {
@@ -61,4 +49,5 @@ public class MainActivity extends AppCompatActivity {
 
         return false;
     }
+
 }
