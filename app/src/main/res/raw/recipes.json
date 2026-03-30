@@ -1,0 +1,117 @@
+[
+  {
+    "recipeImgUrl":"https://hurrythefoodup.com/wp-content/uploads/2018/03/potato-farls-5.jpg",
+    "recipeName":"Potato Farls",
+    "details":{
+      "prepTime":"10 minutes",
+      "cookTime":"25 minutes",
+      "waitTime": "0 minutes",
+      "totalTime": "35 minutes",
+      "servings":"2 servings"
+    },
+    "ingredientList":[
+      {
+        "ingredientData":{
+          "name":"Potato",
+          "category": "VEGETABLES"
+        },
+        "amountDescription":"3 medium"
+      },
+      {
+        "ingredientData":{
+          "name":"Flour",
+          "category": "ESSENTIALS"
+        },
+        "amountDescription":"1/4 cup"
+      },
+      {
+        "ingredientData":{
+          "name":"Salt",
+          "category": "SPICES"
+        },
+        "amountDescription":"To taste"
+      },
+      {
+        "ingredientData":{
+          "name":"Butter",
+          "category": "DAIRY"
+        },
+        "amountDescription":"1 tsp"
+      }
+    ],
+    "nutrition":{
+      "calories":438,
+      "fat": 13,
+      "carbs": 62,
+      "protein":20
+    },
+    "instructions":[
+      "1. Peel, then quarter potatoes, boil for 15 mins until easily pierced with a fork. Drain and cool under running cold water. Allow to go cold. This recipe is also perfect for using leftover potatoes.",
+      "2. Mash the soft spuds with a fork or masher.",
+      "3. Add half the flour to the potato mix and spread the rest onto a work space.",
+      "4. Mix the flour along with the potatoes, butter (if using), salt (and seasoning of choice, see notes) until you have a dough. Make balls from the dough. Use plenty of seasoning!",
+      "5. Press the balls flat into the flour on the workspace. They should be 1-2 cm thick. Don't be afraid to add more flour if needed to stop them sticking.",
+      "6. Put a pan on medium heat, NO oil, then add the potato farls, (make sure each side is covered lightly with flour before putting into the pan).",
+      "7. Cook on each side for about 3-4 minutes, until nicely browned.",
+      "8. Serve with a little extra salt."
+    ]
+  },
+  {
+    "recipeImgUrl":"https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2024/06/tortilla-de-patatas.jpg?im=Resize,width=570;",
+    "recipeName":"Tortilla de Patatas",
+    "details":{
+      "prepTime":"5 minutes",
+      "cookTime":"25 minutes",
+      "waitTime": "0 minutes",
+      "totalTime": "30 minutes",
+      "servings":"4 servings"
+    },
+    "ingredientList":[
+      {
+        "ingredientData":{
+          "name":"Onion",
+          "category": "VEGETABLES"
+        },
+        "amountDescription":"1"
+      },
+      {
+        "ingredientData":{
+          "name":"Potato",
+          "category": "VEGETABLES"
+        },
+        "amountDescription":"3"
+      },
+      {
+        "ingredientData":{
+          "name":"Egg",
+          "category": "VEGETABLES"
+        },
+        "amountDescription":"5"
+      },
+      {
+        "ingredientData":{
+          "name":"Salt",
+          "category": "SPICES"
+        },
+        "amountDescription":"To taste"
+      }
+    ],
+    "nutrition":{
+      "calories":438,
+      "fat": 13,
+      "carbs": 62,
+      "protein":20
+    },
+    "instructions":[
+      "1. Slice the onion in circles.",
+      "2. Do the same thing with the potatoes. In the meantime, heat a pan with a lot of oil.",
+      "3. Fry the onion and potatoes until they fall apart, helping yourself with a wooden spoon.",
+      "4. Strain the potatoes and onions and set aside.",
+      "5. In a bowl add the eggs, season them with salt, and whisk. Add the onion and potatoes mixture and mix all together well.",
+      "6. Transfer the mixture to the pan and cook for five minutes on one side.",
+      "7. Flip the tortilla over, helping yourself with a plate to do so. Then let bake on the other side.",
+      "8. Let it cool to room temperature before serving. Enjoy!"
+    ]
+  }
+
+]

@@ -3,12 +3,20 @@ package com.example.thoughtforfoods;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.thoughtforfoods.data.Database;
+import com.example.thoughtforfoods.data.Recipe;
+import com.example.thoughtforfoods.data.RecipeResult;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.List;
 
 /**
  * MainActivity handles the logic for the primary screen.
@@ -17,7 +25,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNav;
-    CardView recipe;
+    RecyclerView recipeRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,18 +36,24 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNav = findViewById(R.id.bottom_nav);
 
-        recipe = findViewById(R.id.sample_recpie);
+        recipeRecyclerView = findViewById(R.id.recipesRecyclerView);
+        recipeRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        List<RecipeResult> recipeResults = Database.getInstance(this).getRecipeFromIngredients(false);
+        RecipeResultAdapter adapter = new RecipeResultAdapter(recipeResults, new RecipeResultAdapter.OnRecipeClickListener() {
+            @Override
+            public void onRecipeClick(RecipeResult recipe) {
+                Intent intent = new Intent(MainActivity.this, RecipePage.class);
+                intent.putExtra("recipe", recipe.getRecipe());
+                startActivity(intent);
+                finish();
+            }
+        });
+        recipeRecyclerView.setAdapter(adapter);
 
         bottomNav.setOnItemSelectedListener(item ->
                 handleBottomNavSelection(item.getItemId())
         );
-
-        recipe.setOnClickListener(v -> {
-            startActivity(new Intent(this, RecipePage.class));
-        });
-
-
-
 
     }
 

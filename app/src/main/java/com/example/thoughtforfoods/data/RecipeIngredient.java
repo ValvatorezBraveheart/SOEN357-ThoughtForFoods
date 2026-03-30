@@ -1,5 +1,8 @@
 package com.example.thoughtforfoods.data;
-public class RecipeIngredient {
+
+import java.io.Serializable;
+
+public class RecipeIngredient implements Serializable {
     private IngredientData ingredientData;
     private String amountDescription;
 

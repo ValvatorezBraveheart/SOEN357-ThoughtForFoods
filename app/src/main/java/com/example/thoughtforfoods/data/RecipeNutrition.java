@@ -1,6 +1,8 @@
 package com.example.thoughtforfoods.data;
 
-public class RecipeNutrition {
+import java.io.Serializable;
+
+public class RecipeNutrition implements Serializable {
     private int calories;
     private int fat;
     private int carbs;

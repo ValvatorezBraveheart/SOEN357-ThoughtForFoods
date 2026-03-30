@@ -1,0 +1,54 @@
+[
+  {
+    "name":"Potato",
+    "category": "VEGETABLES"
+  },
+  {
+    "name":"Flour",
+    "category": "ESSENTIALS"
+  },
+  {
+    "name":"Butter",
+    "category": "DAIRY"
+  },
+  {
+    "name":"Onion",
+    "category": "VEGETABLES"
+  },
+  {
+    "name":"Egg",
+    "category": "ESSENTIALS"
+  },
+  {
+    "name":"Chicken Breast",
+    "category": "POULTRY"
+  },
+  {
+    "name":"Garlic",
+    "category": "VEGETABLES"
+  },
+  {
+    "name":"Tomato",
+    "category": "VEGETABLES"
+  },
+  {
+    "name":"Olive oil",
+    "category": "ESSENTIALS"
+  },
+  {
+    "name":"Spaghetti",
+    "category": "PASTA"
+  },
+  {
+    "name":"Salt",
+    "category": "SPICES"
+  },
+  {
+    "name":"Pepper",
+    "category": "SPICES"
+  },
+  {
+    "name":"Ground Beef",
+    "category": "MEATS"
+  }
+]
