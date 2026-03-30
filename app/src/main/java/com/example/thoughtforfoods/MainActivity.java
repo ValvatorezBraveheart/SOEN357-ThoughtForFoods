@@ -40,14 +40,11 @@ public class MainActivity extends AppCompatActivity {
         recipeRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         List<RecipeResult> recipeResults = Database.getInstance(this).getRecipeFromIngredients(false);
-        RecipeResultAdapter adapter = new RecipeResultAdapter(recipeResults, new RecipeResultAdapter.OnRecipeClickListener() {
-            @Override
-            public void onRecipeClick(RecipeResult recipe) {
-                Intent intent = new Intent(MainActivity.this, RecipePage.class);
-                intent.putExtra("recipe", recipe.getRecipe());
-                startActivity(intent);
-                finish();
-            }
+        RecipeResultAdapter adapter = new RecipeResultAdapter(recipeResults, recipe -> {
+            Intent intent = new Intent(MainActivity.this, RecipePage.class);
+            intent.putExtra("recipe", recipe.getRecipe());
+            startActivity(intent);
+            finish();
         });
         recipeRecyclerView.setAdapter(adapter);
 

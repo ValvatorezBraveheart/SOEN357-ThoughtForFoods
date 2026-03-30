@@ -20,15 +20,18 @@ public class Database {
     private List<IngredientData> allIngredients;
     private List<Recipe> allRecipes;
 
-    private List<IngredientData> ingredientInPantry;
+    private List<PantrySectionData> pantrySectionDataList;
 
     private Database(Context context){
         allIngredients = new ArrayList<>();
         allRecipes = new ArrayList<>();
-        ingredientInPantry = new ArrayList<>();
+        pantrySectionDataList = new ArrayList<>();
+        for (IngredientCategory category:IngredientCategory.values()){
+            pantrySectionDataList.add(new PantrySectionData(category, new ArrayList<>()));
+        }
         loadIngredients(context);
         loadRecipes(context);
-        ingredientInPantry = allIngredients;
+        addIngredientToPantry("Egg");
     }
     public static Database getInstance(Context context){
         if (instance == null){
@@ -43,8 +46,10 @@ public class Database {
             int totalIngredient = recipe.getIngredientList().size();
             int matchedIngredient = 0;
             for (RecipeIngredient recipeIngredient:recipe.getIngredientList()){
-                if (ingredientInPantry.contains(recipeIngredient.getIngredient())) {
-                    matchedIngredient++;
+                for(PantrySectionData pantrySection:pantrySectionDataList){
+                    if (pantrySection.getIngredientInPantry().contains(recipeIngredient.getIngredient())) {
+                        matchedIngredient++;
+                    }
                 }
             }
             int missingIngredientCount = totalIngredient - matchedIngredient;
@@ -61,11 +66,44 @@ public class Database {
         return results;
     }
 
+    public List<IngredientData> getAllIngredients() {
+        return allIngredients;
+    }
+
     public void addIngredientToPantry(String ingredientName){
         for(IngredientData ingredientData : allIngredients){
-            if (ingredientData.getName().equals(ingredientName)){
-                ingredientInPantry.add(ingredientData);
-                return;
+            if (!ingredientData.getName().equalsIgnoreCase(ingredientName)) {
+                continue;
+            }
+            for (PantrySectionData section : pantrySectionDataList) {
+                if (section.getCategory() == ingredientData.getCategory()) {
+                    section.getIngredientInPantry().add(ingredientData);
+                    return;
+                }
+            }
+        }
+    }
+    public void removeIngredientFromPantry(String ingredientName) {
+        for (IngredientData ingredientData : allIngredients) {
+            if (!ingredientData.getName().equalsIgnoreCase(ingredientName)) {
+                continue;
+            }
+
+            for (PantrySectionData section : pantrySectionDataList) {
+                if (section.getCategory() == ingredientData.getCategory()) {
+                    // Remove ingredient from this section
+                    section.getIngredientInPantry().remove(ingredientData);
+                    return; // stop once removed
+                }
+            }
+        }
+    }
+
+    // For the delete all button
+    public void removeAllIngredientsFromPantry(){
+        for (IngredientData ingredientData : allIngredients) {
+            for (PantrySectionData section : pantrySectionDataList) {
+                section.setIngredientInPantry(new ArrayList<>());
             }
         }
     }
@@ -89,5 +127,9 @@ public class Database {
         allRecipes.addAll(gson.fromJson(reader, listType));
     }
 
+
+    public List<PantrySectionData> getPantrySectionDataList() {
+        return pantrySectionDataList;
+    }
 
 }
