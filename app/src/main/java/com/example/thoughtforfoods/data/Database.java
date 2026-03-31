@@ -76,10 +76,15 @@ public class Database {
                 continue;
             }
             for (PantrySectionData section : pantrySectionDataList) {
-                if (section.getCategory() == ingredientData.getCategory()) {
-                    section.getIngredientInPantry().add(ingredientData);
+
+                if (section.getCategory() != ingredientData.getCategory()) {
+                    continue;
+                }
+                if (section.getIngredientInPantry().contains(ingredientData)){
                     return;
                 }
+                section.getIngredientInPantry().add(ingredientData);
+                return;
             }
         }
     }

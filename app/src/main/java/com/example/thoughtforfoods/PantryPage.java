@@ -2,8 +2,10 @@ package com.example.thoughtforfoods;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,7 +38,8 @@ public class PantryPage extends AppCompatActivity {
                 handleBottomNavSelection(item.getItemId())
         );
         setUpPantry();
-        setUpAddRemove();
+        setUpAddRIngredient();
+        setUpReset();
     }
 
     private void setUpPantry(){
@@ -49,7 +52,7 @@ public class PantryPage extends AppCompatActivity {
         recyclerView.setAdapter(pantryAdapter);
     }
 
-    private void setUpAddRemove(){
+    private void setUpAddRIngredient(){
         AutoCompleteTextView searchView = findViewById(R.id.searchView);
         List<IngredientData> allIngredients = Database.getInstance(this).getAllIngredients();
         List<String> allIngredientNames = new ArrayList<>();
@@ -72,6 +75,14 @@ public class PantryPage extends AppCompatActivity {
             searchView.setText("");
         });
 
+    }
+    private void setUpReset(){
+        // TODO: Make a pop up first, then call the remove
+        Button btnReset = findViewById(R.id.btnReset);
+        btnReset.setOnClickListener(view -> {
+            Database.getInstance(PantryPage.this).removeAllIngredientsFromPantry();
+            pantryAdapter.notifyDataSetChanged();
+        });
     }
 
     private boolean handleBottomNavSelection(int id) {

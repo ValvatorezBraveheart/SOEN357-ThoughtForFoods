@@ -64,13 +64,14 @@ public class RecipePage extends AppCompatActivity {
         totalTime.setText(currentRecipe.getDetails().getTotalTime());
         servings.setText(currentRecipe.getDetails().getServings());
 
-        nbrCalories.setText(String.valueOf(currentRecipe.getNutrition().getCalories()));
-        nbrFat.setText(String.valueOf(currentRecipe.getNutrition().getFat()));
-        nbrCarbs.setText(String.valueOf(currentRecipe.getNutrition().getCarbs()));
-        nbrProtein.setText(String.valueOf(currentRecipe.getNutrition().getProtein()));
+        nbrCalories.setText(String.valueOf(currentRecipe.getNutrition().getCalories())+" kcal");
+        nbrFat.setText(String.valueOf(currentRecipe.getNutrition().getFat())+" g");
+        nbrCarbs.setText(String.valueOf(currentRecipe.getNutrition().getCarbs())+" g");
+        nbrProtein.setText(String.valueOf(currentRecipe.getNutrition().getProtein())+" g");
 
         StringBuilder ingredientStr = new StringBuilder();
         for (RecipeIngredient recipeIngredient : currentRecipe.getIngredientList()){
+            ingredientStr.append("- ");
             ingredientStr.append(recipeIngredient.getAmountDescription());
             ingredientStr.append(" ");
             ingredientStr.append(recipeIngredient.getIngredient().getName());

@@ -112,6 +112,255 @@
       "7. Flip the tortilla over, helping yourself with a plate to do so. Then let bake on the other side.",
       "8. Let it cool to room temperature before serving. Enjoy!"
     ]
-  }
+  },
+  {
+    "recipeImgUrl": "https://cravingtasty.com/wp-content/uploads/2017/07/Pan-Seared-Baked-Chicken-Breast.jpg",
+    "recipeName": "Pan-Seared Oven Baked Chicken Breast",
+    "details": {
+      "prepTime": "5 minutes",
+      "cookTime": "25 minutes",
+      "waitTime": "0 minutes",
+      "totalTime": "30 minutes",
+      "servings": "2 servings"
+    },
+    "ingredientList": [
+      {
+        "ingredientData": {
+          "name": "Chicken Breast",
+          "category": "POULTRY"
+        },
+        "amountDescription": "2 large"
+      },
+      {
+        "ingredientData": {
+          "name": "Garlic",
+          "category": "VEGETABLES"
+        },
+        "amountDescription": "3 large, minced"
+      },
+      {
+        "ingredientData": {
+          "name": "Olive Oil",
+          "category": "ESSENTIALS"
+        },
+        "amountDescription": "2 tbsp"
+      },
+      {
+        "ingredientData": {
+          "name": "Butter",
+          "category": "DAIRY"
+        },
+        "amountDescription": "2 tbsp"
+      },
+      {
+        "ingredientData": {
+          "name": "Pepper",
+          "category": "SPICES"
+        },
+        "amountDescription": "1 tsp"
+      },
+      {
+        "ingredientData": {
+          "name": "Salt",
+          "category": "SPICES"
+        },
+        "amountDescription": "2 tsp"
+      }
+    ],
+    "nutrition": {
+      "calories": 300,
+      "fat": 10,
+      "carbs": 0,
+      "protein": 45
+    },
+    "instructions": [
+      "1. Preheat the oven to 410°F.",
+      "2. Meanwhile, prepare the chicken breasts. Place the chicken breasts, one at a time, in a gallon zip lock bag and, using a cast iron skillet, give them a good whack to break the bones and slightly flatten them. This will help get a more uniform cooking. Rub the breasts with salt, pepper and minced garlic. Set aside.",
+      "3. Heat the butter and the oil in a large cast iron pan over medium-high heat. As soon as the butter turns dark brown, add the chicken breasts skin side down. Sear for two minutes or until the skin becomes dark golden brown. Flip the breasts and sear for another 2 minutes.",
+      "4. Move the pan into the preheated oven and bake for about 17-20 minutes, until the internal temperature reaches 160F. Remove the breasts from the oven and let them rest for 5 minutes. It’s best to remove the breasts from the pan as hot cast iron will continue cooking the meat for too long. Serve with chopped parsley and lime wedges, and your favorite side dish."
+    ]
+  },
+  {
+    "recipeImgUrl": "https://www.vegrecipesofindia.com/wp-content/uploads/2012/09/roasted-tomato-soup-recipe-1-280x280.jpg",
+    "recipeName": "Roasted Tomato Soup (5 Ingredients)",
+    "details": {
+      "prepTime": "5 minutes",
+      "cookTime": "30 minutes",
+      "waitTime": "0 minutes",
+      "totalTime": "35 minutes",
+      "servings": "2 servings"
+    },
+    "ingredientList": [
+      {
+        "ingredientData": {
+          "name": "TOMATO"
+        },
+        "amountDescription": "2 large"
+      },
+      {
+        "ingredientData": {
+          "name": "Garlic"
+        },
+        "amountDescription": "6 to 7 medium chopped"
+      },
+      {
+        "ingredientData": {
+          "name": "Olive Oil"
+        },
+        "amountDescription": "2 tbsp"
+      },
+      {
+        "ingredientData": {
+          "name": "Pepper"
+        },
+        "amountDescription": "1 tsp"
+      },
+      {
+        "ingredientData": {
+          "name": "Sugar"
+        },
+        "amountDescription": "1 tsp"
+      },
+      {
+        "ingredientData": {
+          "name": "Salt",
+          "category": "SPICES"
+        },
+        "amountDescription": "As needed"
+      }
+    ],
+    "nutrition": {
+      "calories": 182,
+      "fat": 15,
+      "carbs": 13,
+      "protein": 3
+    },
+    "instructions": [
+      "1. When the roasted tomatoes are slightly hot or warm, add them in a blender along with the garlic and all the juices and oil from the tray.",
+      "2. Add crushed black pepper, salt as needed and sugar to the blender.",
+      "3. Add warm or slightly hot water and blend to a fine and smooth puree. If the soup looks thick to you add some more water.",
+      "4. If you prefer, you can transfer the soup in a saucepan and heat it lightly on the stovetop.",
+      "5. Pour the soup in serving bowls.",
+      "6. Garnish with fresh mint leaves, basil or cilantro or top with some grated cheese or cream if you prefer. You can also place some bread croutons on top of the soup.",
+      "7. Serve roasted tomato soup warm or chilled."
+    ]
+  },
+  {
+    "recipeImgUrl": "https://thekittchen.com/wp-content/uploads/2016/09/Roasted-Tomato-Sauce-3-768x1152.jpg",
+    "recipeName": "Roasted Tomato and Garlic Sauce",
+    "details": {
+      "prepTime": "10 minutes",
+      "cookTime": "30 minutes",
+      "waitTime": "0 minutes",
+      "totalTime": "40 minutes",
+      "servings": "4 servings"
+    },
+    "ingredientList": [
+      {
+        "ingredientData": {
+          "name": "Tomato"
+        },
+        "amountDescription": "2 pounds"
+      },
+      {
+        "ingredientData": {
+          "name": "Olive oil"
+        },
+        "amountDescription": "2 tbps"
+      },
+      {
+        "ingredientData": {
+          "name": "Salt"
+        },
+        "amountDescription": "1/2 tsp"
+      },
+      {
+        "ingredientData": {
+          "name": "Pepper"
+        },
+        "amountDescription": "1/4 tsp"
+      },
+      {
+        "ingredientData": {
+          "name": "Garlic"
+        },
+        "amountDescription": "1 head"
+      }
+    ],
+    "nutrition": {
+      "calories": 182,
+      "fat": 15,
+      "carbs": 13,
+      "protein": 3
+    },
+    "instructions": [
+      "1. Heat your oven to 350 degrees.",
+      "2. Slice the tomatoes, and spread them out in a single layer on a parchment-lined baking sheet. The parchment is important because it prevents the tomato juices from burning, and the parchment makes it easy to transfer those juices into the blender.",
+      "3. Drizzle 1 ½ tablespoons of olive oil over the tomatoes, and then sprinkle with the salt and pepper.",
+      "4. Tear a small sheet of aluminum foil. Then cut the root end off of the head of garlic. Place it on the foil, sliced-side facing down. Drizzle the remaining olive oil over the garlic, then wrap it up in the foil. Place it on the baking sheet with the tomatoes.",
+      "5. Roast the tomatoes and garlic for 30 minutes. Then remove them from the oven. Unwrap the garlic to let it cool. Place the tomatoes and all of their juices in a blender and liquefy.",
+      "6. Add cloves of garlic to taste, and liquefy again. Finish by adding additional salt and pepper to taste."
+    ]
+  },
 
+  {
+    "recipeImgUrl": "https://pinchandswirl.com/wp-content/uploads/2022/11/Garlic-Butter-Noodles_sq-300x300.jpg",
+    "recipeName": "Roasted Tomato and Garlic Sauce",
+    "details": {
+      "prepTime": "5 minutes",
+      "cookTime": "15 minutes",
+      "waitTime": "0 minutes",
+      "totalTime": "20 minutes",
+      "servings": "4 servings"
+    },
+    "ingredientList": [
+      {
+        "ingredientData": {
+          "name": "Spaghetti"
+        },
+        "amountDescription": "12 ounces"
+      },
+      {
+        "ingredientData": {
+          "name": "Butter"
+        },
+        "amountDescription": "3 tablespoons "
+      },
+      {
+        "ingredientData": {
+          "name": "Olive oil"
+        },
+        "amountDescription": "2 tbsp"
+      },
+      {
+        "ingredientData": {
+          "name": "Garlic"
+        },
+        "amountDescription": "5 large chopped"
+      },
+      {
+        "ingredientData": {
+          "name": "Parmesan"
+        },
+        "amountDescription": "2 ounces"
+      },
+      {
+        "ingredientData": {
+          "name": "Parsley"
+        },
+        "amountDescription": "1 tbsp chopped"
+      }
+    ],
+    "nutrition": {
+      "calories": 182,
+      "fat": 15,
+      "carbs": 13,
+      "protein": 3
+    },
+    "instructions": [
+      "1. Bring a large pot of salted water to boil. Cook linguine according to package directions until firm to the bite (al dente), 9-13 minutes. Drain, reserving 1 cup of pasta water.",
+      "2. Meanwhile, heat butter and olive oil in a large skillet over medium heat until sizzling. Add garlic; cook and stir until fragrant and slightly mellowed, about 1 minute. Remove from heat.",
+      "3. Once you've drained the pasta, set skillet with the garlic butter mixture over medium heat. Add drained, cooked pasta, 1/4 cup of reserved pasta water and parsley; toss well to coat. Cook and stir until heated through, adding more pasta water if pasta seems too dry; season to taste with salt and pepper. Transfer to serving bowl or platter; top with grated parmesan cheese and garnish with more parsley if desired. Serve."
+    ]
+  }
 ]

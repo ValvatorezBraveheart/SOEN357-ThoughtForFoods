@@ -50,5 +50,14 @@
   {
     "name":"Ground Beef",
     "category": "MEATS"
+  },
+  {
+    "name":"Parsley",
+    "category": "VEGETABLES"
+  },
+
+  {
+    "name":"Parmesan",
+    "category": "CHEESE"
   }
 ]

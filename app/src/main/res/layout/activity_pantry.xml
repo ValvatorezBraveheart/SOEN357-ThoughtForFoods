@@ -34,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnReset"
         android:layout_width="88dp"
         android:layout_height="49dp"
         android:text="Reset"

@@ -316,6 +316,7 @@
                         android:textSize="16sp"
                         android:layout_margin="12dp"/>
                     <TextView
+                        android:layout_margin="12dp"
                         android:id="@+id/tvIngredients"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
@@ -350,6 +351,7 @@
                         android:id="@+id/tvInstructions"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
                         android:lineSpacingExtra="6dp"/>
 
                 </LinearLayout>

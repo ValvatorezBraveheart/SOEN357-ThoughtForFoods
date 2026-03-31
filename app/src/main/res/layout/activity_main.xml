@@ -28,7 +28,7 @@
         android:layout_marginBottom="584dp"
         android:gravity="center"
         android:text="Only use ingredients in pantry"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
         app:layout_constraintEnd_toEndOf="@id/searchView"
         app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toStartOf="parent" />
