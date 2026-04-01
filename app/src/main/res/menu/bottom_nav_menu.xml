@@ -2,12 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/find_recipe"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/ic_recipes"
         android:title="Find Recipe" />
 
     <item
         android:id="@+id/pantry"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/ic_pantry"
         android:title="Pantry"/>
 
     <item
