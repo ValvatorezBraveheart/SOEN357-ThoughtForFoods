@@ -10,7 +10,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
         android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_height="80dp"
         android:background="#AEB784"
         app:itemIconSize="28dp"
         app:itemIconTint="@android:color/white"
@@ -44,13 +44,12 @@
                 android:id="@+id/foodTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="casual"
+                android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
                 android:text="A food or smt"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textSize="34sp"
-                android:textStyle="bold">
-            </TextView>
+                android:textStyle="bold"></TextView>
 
             <!-- Long Card for overview and nutritional values -->
             <androidx.cardview.widget.CardView

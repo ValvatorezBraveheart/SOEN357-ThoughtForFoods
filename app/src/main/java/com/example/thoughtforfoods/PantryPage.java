@@ -2,7 +2,6 @@ package com.example.thoughtforfoods;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
@@ -16,6 +15,7 @@ import com.example.thoughtforfoods.data.Database;
 import com.example.thoughtforfoods.data.IngredientData;
 import com.example.thoughtforfoods.data.PantrySectionData;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,8 +80,16 @@ public class PantryPage extends AppCompatActivity {
         // TODO: Make a pop up first, then call the remove
         Button btnReset = findViewById(R.id.btnReset);
         btnReset.setOnClickListener(view -> {
-            Database.getInstance(PantryPage.this).removeAllIngredientsFromPantry();
-            pantryAdapter.notifyDataSetChanged();
+            new MaterialAlertDialogBuilder(this, R.style.CustomDialogTheme)
+                    .setTitle("You are removing all ingredients from your pantry")
+                    .setMessage("Are you sure?")
+                    .setPositiveButton("Confirm", (dialog, which) -> {
+                        Database.getInstance(PantryPage.this).removeAllIngredientsFromPantry();
+                        pantryAdapter.notifyDataSetChanged();
+                        // Handle delete action
+                    })
+                    .setNegativeButton("Cancel", null)
+                    .show();
         });
     }
 
@@ -97,7 +105,7 @@ public class PantryPage extends AppCompatActivity {
         }
 
         if (id == R.id.nav_settings) {
-            Toast.makeText(this, "Settings clicked", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, SettingsPage.class));
             return true;
         }
 

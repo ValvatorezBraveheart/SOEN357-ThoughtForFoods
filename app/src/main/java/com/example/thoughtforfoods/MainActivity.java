@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (id == R.id.nav_settings) {
-            Toast.makeText(this, "Settings clicked", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, SettingsPage.class));
             return true;
         }
 

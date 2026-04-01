@@ -1,0 +1,47 @@
+package com.example.thoughtforfoods;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+public class SettingsPage extends AppCompatActivity {
+
+    BottomNavigationView bottomNav;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        // Links this Java class to the XML layout (activity_main.xml)
+        setContentView(R.layout.activity_settings);
+
+        bottomNav = findViewById(R.id.bottom_nav);
+
+        bottomNav.setOnItemSelectedListener(item ->
+                handleBottomNavSelection(item.getItemId())
+        );
+    }
+
+    private boolean handleBottomNavSelection(int id) {
+        if (id == R.id.find_recipe) {
+            startActivity(new Intent(this, MainActivity.class));
+            return true;
+        }
+
+        if (id == R.id.pantry) {
+            startActivity(new Intent(this, PantryPage.class));
+            return true;
+        }
+
+        if (id == R.id.nav_settings) {
+            startActivity(new Intent(this, SettingsPage.class));
+            return true;
+        }
+
+        return false;
+    }
+}
