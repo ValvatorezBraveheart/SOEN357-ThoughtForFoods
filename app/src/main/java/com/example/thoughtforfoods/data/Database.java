@@ -11,6 +11,7 @@ import java.io.InputStreamReader;
 import java.io.Serializable;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 // Mocking of a database containing all the ingredients and recipes
@@ -54,15 +55,14 @@ public class Database {
             }
             int missingIngredientCount = totalIngredient - matchedIngredient;
             if (!matchAll){
-                if (missingIngredientCount<=2){
-                    results.add(new RecipeResult(recipe, missingIngredientCount));
-                }
+                results.add(new RecipeResult(recipe, missingIngredientCount));
             } else {
                 if (missingIngredientCount==0){
                     results.add(new RecipeResult(recipe, 0));
                 }
             }
         }
+        results.sort(Comparator.comparingInt(RecipeResult::getMissingIngredientCount));
         return results;
     }
 

@@ -10,5 +10,6 @@ public enum IngredientCategory {
     CHEESES,
     DAIRY,
     PASTA,
-    SPICES
+    SPICES,
+    CHEESE
 }
