@@ -19,9 +19,11 @@
             </intent-filter>
         </activity>
 
+
         <activity android:name=".PantryPage"/>
         <activity android:name=".RecipePage"/>
         <activity android:name=".SettingsPage"/>
+        
     </application>
 
 
