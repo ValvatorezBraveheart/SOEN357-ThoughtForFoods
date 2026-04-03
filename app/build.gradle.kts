@@ -38,6 +38,8 @@ android {
 dependencies {
     implementation(libs.appcompat)
     implementation(libs.material)
+    implementation(libs.gson)
+    implementation(libs.glide)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

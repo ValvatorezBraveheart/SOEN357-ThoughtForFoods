@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:clickable="true"
+    android:id="@+id/sample_recpie"
+    android:focusable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    app:layout_constraintTop_toBottomOf="@id/searchView"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tiramisu"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/prepTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20 minutes"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/ingredientsOwned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="15/20 Ingredients owned"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvHaveAllIngredient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_all_ingredient"
+                android:text="Have all ingredient"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:drawableStart="@drawable/ic_check"
+                android:paddingHorizontal="10dp"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/foodImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

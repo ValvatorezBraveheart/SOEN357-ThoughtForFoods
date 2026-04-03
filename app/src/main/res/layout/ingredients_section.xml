@@ -35,12 +35,10 @@
                 android:layout_marginBottom="6dp"
                 android:background="#CCCCCC" />
 
-            <LinearLayout
-                android:id="@+id/ingredientContainer"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ingredientRecyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"/>
+                android:layout_height="wrap_content"/>
 
 
         </LinearLayout>
