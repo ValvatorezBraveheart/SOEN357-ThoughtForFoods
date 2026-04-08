@@ -41,6 +41,8 @@
         android:layout_width="246dp"
         android:layout_height="32dp"
         android:layout_marginTop="15dp"
+        app:trackTint="@color/switch_track_color"
+        app:thumbTint="@color/switch_thumb_color"
         android:gravity="center"
         android:text="Only use ingredients in pantry"
         app:layout_constraintEnd_toEndOf="@id/searchView"
