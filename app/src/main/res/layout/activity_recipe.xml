@@ -90,12 +90,14 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Prep Time:"
+                                    android:textColor="@color/black"
                                     android:textStyle="bold"/>
 
                                 <TextView
                                     android:id="@+id/prepTime"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
                                     android:text="5 mins"/>
                             </LinearLayout>
 
@@ -110,12 +112,14 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Cook Time:"
+                                    android:textColor="@color/black"
                                     android:textStyle="bold"/>
 
                                 <TextView
                                     android:id="@+id/cookTime"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
                                     android:text="30 mins"/>
                             </LinearLayout>
 
@@ -130,12 +134,14 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Additional Time:"
+                                    android:textColor="@color/black"
                                     android:textStyle="bold"/>
 
                                 <TextView
                                     android:id="@+id/additionalTime"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
                                     android:text="4 hrs"/>
                             </LinearLayout>
                         </LinearLayout>
@@ -159,12 +165,14 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Total Time:"
+                                    android:textColor="@color/black"
                                     android:textStyle="bold"/>
 
                                 <TextView
                                     android:id="@+id/totalTime"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
                                     android:text="4 hrs 35 mins"/>
                             </LinearLayout>
 
@@ -179,12 +187,14 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Servings:"
+                                    android:textColor="@color/black"
                                     android:textStyle="bold"/>
 
                                 <TextView
                                     android:id="@+id/servings"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
                                     android:text="6"/>
                             </LinearLayout>
                         </LinearLayout>
@@ -211,6 +221,7 @@
                                 android:layout_weight="1"
                                 android:text="Calories"
                                 android:textStyle="bold"
+                                android:textColor="@color/black"
                                 android:gravity="center"/>
 
                             <!-- Fat -->
@@ -220,6 +231,7 @@
                                 android:layout_weight="1"
                                 android:text="Fat"
                                 android:textStyle="bold"
+                                android:textColor="@color/black"
                                 android:gravity="center"/>
 
                             <!-- Carbs -->
@@ -229,6 +241,7 @@
                                 android:layout_weight="1"
                                 android:text="Carbs"
                                 android:textStyle="bold"
+                                android:textColor="@color/black"
                                 android:gravity="center"/>
 
                             <!-- Protein -->
@@ -238,6 +251,7 @@
                                 android:layout_weight="1"
                                 android:text="Protein"
                                 android:textStyle="bold"
+                                android:textColor="@color/black"
                                 android:gravity="center"/>
 
 
@@ -255,6 +269,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:textColor="@color/black"
                                 android:layout_weight="1"
                                 android:text="250">
                             </TextView>
@@ -264,6 +279,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:textColor="@color/black"
                                 android:layout_weight="1"
                                 android:text="13g">
                             </TextView>
@@ -273,6 +289,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:textColor="@color/black"
                                 android:layout_weight="1"
                                 android:text="33g">
                             </TextView>
@@ -282,6 +299,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
+                                android:textColor="@color/black"
                                 android:layout_weight="1"
                                 android:text="25g">
                             </TextView>
@@ -311,12 +329,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Ingredients"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:textSize="16sp"
                         android:layout_margin="12dp"/>
                     <TextView
                         android:layout_margin="12dp"
                         android:id="@+id/tvIngredients"
+                        android:textColor="@color/black"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
@@ -344,6 +364,7 @@
                         android:text="Instructions"
                         android:textStyle="bold"
                         android:textSize="16sp"
+                        android:textColor="@color/black"
                         android:layout_marginBottom="8dp"/>
 
                     <TextView
@@ -351,6 +372,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="12dp"
+                        android:textColor="@color/black"
                         android:lineSpacingExtra="6dp"/>
 
                 </LinearLayout>
