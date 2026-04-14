@@ -19,3 +19,10 @@ ThoughtForFoods is a recipe app mainly focused on searching recipes you can make
 1. Clone the repository: `git clone https://github.com/ValvatorezBraveheart/SOEN357-ThoughtForFoods.git`
 2. Open the project in **Android Studio**.
 3. Sync Gradle and run the application on an emulator or physical device.
+
+## Sample user path
+1. User go to Pantry page
+2. User add their ingredient (ex: Potato, Flour, Egg, Salt,...)
+3. User go to Recipe page
+4. User click on a recipe they want to make
+5. User check the recipe instruction
