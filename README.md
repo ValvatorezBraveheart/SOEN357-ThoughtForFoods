@@ -4,7 +4,7 @@ ThoughtForFoods is a recipe app mainly focused on searching recipes you can make
 ## Team members
 | Name | Student ID |
 | :--- | :--- |
-| Ariel Kegelesn | 40264293 |
+| Ariel Kegeles | 40264293 |
 | Minh Huy Tran | 40263743 |
 
 
